@@ -59,9 +59,9 @@ public class CalendarPosition {
             if (firstDayWeek == 0) {
                 startDay = previousMonthDays - 5;
             } else {
-                startDay = previousMonthDays - firstDayWeek + 1;
+                startDay = previousMonthDays - firstDayWeek + 2;
             }
-            for (int i = 0; i < (firstDayWeek == 0 ? 6 : firstDayWeek); i++) {
+            for (int i = 0; i < (firstDayWeek == 0 ? 6 : firstDayWeek-1); i++) {
                 position.add(String.valueOf((startDay)));
                 startDay++;
             }
